@@ -206,7 +206,14 @@ Het RSGB volgt materiële en formele historie. Beide zijn nodig voor juridische 
 
 ## 2.4.3 Afleidbare gegevens
 **Samenvatting:**  
-Sommige gegevens worden expliciet opgenomen omdat ze moeilijk afleidbaar zijn, zoals datum vestiging in Nederland.
+Er is voor gekozen om in het RSGB bevat ook afgeleide gegevens op te nemen. Deze gegevens zijn afleidbaar uit andere attribuut- en/of relatiesoorten. Enerzijds is dit redundantie, anderzijds brengt dit een afnemers behoefte in beeld, met name als de wijze van afleiding enige complexiteit bevat. Het aantal afgeleide gegevens is zo beperkt mogelijk gehouden.
+
+Een afleidbaar gegeven is te herkennen aan het feit dat in Enterpise Architect in de attribute-properties onder Advanced de "Derived" property op "True" is gezet. Dat leidt ertoe dat de "Indicatie afleidbaar" op "Ja" komt te staan in de Respec documentatie en dat de attribuutsoort in een UML-diagram wordt weergegeven met een voorloop- /
+
+_Zie in de onderstaande afbeelding als voorbeeld de "burgerlijke staat" _
+Image ![alt text](media/Afgeleid_gegeven.png)Image
+
+Daarnaast moet bij een afleidbaar gegeven de afleiding omschreven worden in de tagged value "Regels" zodat alle partijen de afleiding op dezelfde wijze toepassen.
 
 ## 2.4.4 Domeinwaarden of tabel
 **Samenvatting:**  
