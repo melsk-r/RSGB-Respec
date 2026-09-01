@@ -171,8 +171,14 @@ Niet bij elke attribuutsoort (of groep van attribuutsoorten) hebben we beide met
 Deze regels geven inzicht in de wijze waarop de combinaties van beide historie-indicaties bij een attribuut- of relatiesoort geïnterpreteerd moeten worden.
 
 ### Afleidbare gegevens
-Het RSGB bevat onder andere zogenaamde afgeleide gegevens: gegevens die afleidbaar zijn uit andere attribuut- en/of relatiesoorten. Dit lijkt op redundantie. Toch hebben we deze gegevens daar opgenomen waar er ten eerste vraag is naar het afgeleide gegeven en ten tweede het gegeven niet eenvoudig af te leiden is (er moet sprake zijn van enige mate van complexiteit). Wel hebben we het aantal afgeleide gegevens zo beperkt mogelijk gehouden.
-Een voorbeeld is de 'Datum vestiging in Nederland' van een Ingeschreven persoon. De afleiding van dit gegeven is niet triviaal. Door het als afleidbaar gegeven op te nemen kan het opgevraagd worden zonder dat de historie of andere gegevens van het object opgevraagd hoeven te worden om daaruit dit gegeven af te leiden.
+Er is voor gekozen om in het RSGB bevat ook afgeleide gegevens op te nemen. Deze gegevens zijn afleidbaar uit andere attribuut- en/of relatiesoorten. Enerzijds is dit redundantie (vanuit persistentie perspectief) , anderzijds brengt dit een afnemers behoefte in beeld, met name als de wijze van afleiding enige complexiteit bevat. Het aantal afgeleide gegevens is zo beperkt mogelijk gehouden.
+
+Een afleidbaar gegeven is te herkennen aan het feit dat in Enterpise Architect in de attribute-properties onder Advanced de "Derived" property op "True" is gezet. Dat leidt ertoe dat de "Indicatie afleidbaar" op "Ja" komt te staan in de Respec documentatie en dat de attribuutsoort in een UML-diagram wordt weergegeven met een voorloop- /
+
+_Zie in de onderstaande afbeelding als voorbeeld de "burgerlijke staat" _
+Image ![alt text](media/Afgeleid_gegeven.png)Image
+
+Daarnaast moet bij een afleidbaar gegeven de afleiding omschreven worden in de tagged value "Regels" zodat alle partijen de afleiding op dezelfde wijze toepassen.
 
 ### Domeinwaarden of tabel
 In bijvoorbeeld het GFO Basisgegevens werd veel gewerkt met codetabellen om de mogelijke waarden van een attribuutsoort te specificeren. In bepaalde catalogi van basisregistraties, zoals die van de BAG, is hiervan geheel afgezien. De mogelijke waarden van een attribuutsoort zijn daarin als domeinwaarden van de attribuutsoort gespecificeerd. In het RSGB hebben we bij het laatste zoveel mogelijk aangesloten. Alleen als sprake is van dynamiek in de domeinwaarden hebben we een 'tabel-objecttype' opgenomen. Dit betreft de situaties waarin domeinwaarden kunnen veranderen en/of het aantal domeinwaarden kan toe- of afnemen. Een voorbeeld is het objecttype LAND.
